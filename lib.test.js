@@ -20,3 +20,19 @@ test("prime(10) should be false", () => {
 test("prime(2) should be true", () => {
     expect(lib.prime(2)).toBe(true);
 });
+
+test("factorial(16) should be -1", () => {
+    expect(lib.factorial(16)).toBe(-1);
+});
+
+test("factorial(-1) should be -1", () => {
+    expect(lib.factorial(-1)).toBe(-1);
+});
+
+test("factorial(0) should be 1", () => {
+    expect(lib.factorial(0)).toBe(1);
+});
+
+test("factorial(5) should be 120", () => {
+    expect(lib.factorial(5)).toBe(120);
+});
