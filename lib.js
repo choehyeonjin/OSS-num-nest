@@ -12,7 +12,13 @@ function prime(num) {
 }
 
 function factorial(num) {
-    return -1;
+    if (num < 0 || num > 15) return -1;
+    if (num === 0) return 1;
+    let result = 1;
+    for (let i = 1; i <= num; i++) {
+        result *= i;
+    }
+    return result;
 }
 
 module.exports = {
